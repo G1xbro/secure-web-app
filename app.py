@@ -7,6 +7,7 @@ from models import db, User, Note
 from dotenv import load_dotenv
 import html  # Standard Python library for XSS sanitization
 from pydantic import BaseModel, Field, ValidationError
+import logging
 
 load_dotenv()
 
@@ -22,37 +23,59 @@ def token_required(allowed_roles=None):
         @wraps(f)
         def decorated(*args, **kwargs):
             token = None
-            # Expecting header format: Authorization: Bearer <JWT_TOKEN>
+            
+            # 1. Token Extraction
             if 'Authorization' in request.headers:
                 auth_header = request.headers['Authorization']
                 if auth_header.startswith("Bearer "):
                     token = auth_header.split(" ")[1]
 
             if not token:
+                logging.warning(f"Unauthenticated request attempt missing token from IP: {request.remote_addr} on endpoint: {request.path}")
                 return jsonify({"error": "Authentication token missing"}), 401
 
+            # 2. Token Verification & Role Authorization
             try:
                 # Verify token signature using the secret key
                 data = jwt.decode(token, app.config['SECRET_KEY'], algorithms=["HS256"])
                 current_user = User.query.get(data['user_id'])
+                
                 if not current_user:
+                    logging.warning(f"Valid token presented for non-existent User ID: {data.get('user_id')} from IP: {request.remote_addr}")
                     return jsonify({"error": "User no longer exists"}), 401
                 
-                # Role authorization check
+                # Check for Privilege Escalation Attempt
                 if allowed_roles and current_user.role not in allowed_roles:
+                    logging.warning(
+                        f"SECURITY ALERT: User ID {current_user.id} ({current_user.role}) "
+                        f"attempted unauthorized access to restricted endpoint: {request.path} (Allowed: {allowed_roles})"
+                    )
                     return jsonify({"error": "Unauthorized access level"}), 403
 
                 # Attach user context globally to the request context
                 g.current_user = current_user
+
             except jwt.ExpiredSignatureError:
+                logging.info(f"Expired token presented from IP: {request.remote_addr} on endpoint: {request.path}")
                 return jsonify({"error": "Token has expired"}), 401
+                
             except jwt.InvalidTokenError:
+                logging.warning(f"INTRUSION DETECTED: Malicious or malformed JWT token attempt from IP: {request.remote_addr} on endpoint: {request.path}")
                 return jsonify({"error": "Invalid token"}), 401
 
             return f(*args, **kwargs)
         return decorated
     return decorator
 
+# --- DEFENSIVE LOGGING ENGINE CONFIGURATION ---
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] SECURITY_EVENT: %(message)s',
+    handlers=[
+        logging.FileHandler("security.log"), # Writes out to a secure local audit file
+        logging.StreamHandler()              # Mirror outputs out to the system console
+    ]
+)
 
 # --- REGISTRATION & LOGIN ROUTES ---
 
@@ -81,12 +104,17 @@ def register():
 def login():
     data = request.get_json()
     if not data or 'username' not in data or 'password' not in data:
+        logging.warning(f"Malformed login request payload received from IP: {request.remote_addr}")
         return jsonify({"error": "Missing credentials"}), 400
 
     user = User.query.filter_by(username=data['username']).first()
     
-    # Safe comparison verification
+    # DEFENSIVE LOGGING: Monitor failures safely without exposing data['password']
     if not user or not user.check_password(data['password']):
+        logging.warning(
+            f"AUTH FAILURE: Failed login attempt for username: '{data['username']}' "
+            f"from origin IP: {request.remote_addr}"
+        )
         return jsonify({"error": "Invalid username or password"}), 401
 
     # Issue a signed stateless JWT payload
@@ -97,8 +125,10 @@ def login():
     }
     token = jwt.encode(payload, app.config['SECRET_KEY'], algorithm="HS256")
 
+    # Audit Trail: Track successful sessions for anomaly detection
+    logging.info(f"AUTH SUCCESS: Session token generated for User ID: {user.id} ({user.role}) from IP: {request.remote_addr}")
+    
     return jsonify({"token": token, "message": "Login successful"}), 200
-
 
 # --- PROTECTED APPLICATION ROUTES ---
 

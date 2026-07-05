@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Notes Portal</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🛡️ Secure Notes Portal</h2>
+        <div id="auth-status">Status: Not Authenticated</div>
+
+        <div id="auth-section">
+            <h3>Login / Register</h3>
+            <input type="text" id="username" placeholder="Username" required autocomplete="off">
+            <input type="password" id="password" placeholder="Password" required>
+            <button id="btn-login">Log In</button>
+            <button id="btn-register" class="btn-secondary">Register</button>
+        </div>
+
+        <div id="dashboard-section" class="hidden">
+            <hr>
+            <h3>Create a Secure Note</h3>
+            <input type="text" id="note-title" placeholder="Note Title">
+            <textarea id="note-content" placeholder="Write your private contents here..." rows="4"></textarea>
+            <button id="btn-save" class="btn-success">Save Note</button>
+
+            <hr>
+            <h3>Your Private Notes</h3>
+            <button id="btn-refresh" class="btn-info">Refresh Notes</button>
+            <div id="notes-container"></div>
+            <br>
+            <button id="btn-logout" class="btn-danger">Log Out</button>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

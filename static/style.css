@@ -1,0 +1,75 @@
+/* static/style.css */
+body { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    background: #f4f6f9; 
+    margin: 40px; 
+    color: #333; 
+}
+.container { 
+    max-width: 600px; 
+    margin: 0 auto; 
+    background: white; 
+    padding: 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+}
+input, textarea, button { 
+    width: 100%; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+button { 
+    background: #007bff; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+button:hover { 
+    background: #0056b3; 
+}
+.hidden { 
+    display: none; 
+}
+.note { 
+    background: #f8f9fa; 
+    padding: 15px; 
+    border-left: 4px solid #28a745; 
+    margin-bottom: 10px; 
+    border-radius: 4px; 
+}
+/* Append these to the bottom of static/style.css */
+#auth-status {
+    color: #666; 
+    margin-bottom: 15px;
+}
+#notes-container {
+    margin-top: 15px;
+}
+.btn-secondary {
+    background: #6c757d;
+}
+.btn-secondary:hover {
+    background: #5a6268;
+}
+.btn-success {
+    background: #28a745;
+}
+.btn-success:hover {
+    background: #218838;
+}
+.btn-info {
+    background: #17a2b8;
+}
+.btn-info:hover {
+    background: #138496;
+}
+.btn-danger {
+    background: #dc3545;
+}
+.btn-danger:hover {
+    background: #c82333;
+}

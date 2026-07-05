@@ -1,7 +1,7 @@
 import os
 import datetime
 import jwt
-from flask import Flask, jsonify, request, g
+from flask import Flask, jsonify, request, g, render_template
 from functools import wraps
 from models import db, User, Note
 from dotenv import load_dotenv
@@ -16,6 +16,11 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 db.init_app(app)
+
+@app.route('/')
+def index():
+    # Serves the frontend application interface
+    return render_template('index.html')
 
 # --- SECURITY DECORATOR ---
 def token_required(allowed_roles=None):

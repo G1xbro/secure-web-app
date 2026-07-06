@@ -1,0 +1,88 @@
+2026-07-06 18:11:14,094 [INFO] SECURITY_EVENT: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-06 18:11:14,094 [INFO] SECURITY_EVENT: [33mPress CTRL+C to quit[0m
+2026-07-06 18:11:14,096 [INFO] SECURITY_EVENT:  * Restarting with stat
+2026-07-06 18:11:14,744 [WARNING] SECURITY_EVENT:  * Debugger is active!
+2026-07-06 18:11:14,747 [INFO] SECURITY_EVENT:  * Debugger PIN: 130-481-824
+2026-07-06 18:11:19,301 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:11:19] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-06 18:11:19,369 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:11:19] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-07-06 18:11:19,376 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:11:19] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-07-06 18:11:19,445 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:11:19] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=TeGqz95U28uYlv6WWS0o HTTP/1.1" 200 -
+2026-07-06 18:11:19,477 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:11:19] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-07-06 18:12:44,607 [INFO] SECURITY_EVENT:  * Detected change in 'C:\\Users\\jeeva\\Projects\\Internship Projects\\2. Secure Web App\\secure-web-app\\app.py', reloading
+2026-07-06 18:12:44,760 [INFO] SECURITY_EVENT:  * Restarting with stat
+2026-07-06 18:12:45,473 [WARNING] SECURITY_EVENT:  * Debugger is active!
+2026-07-06 18:12:45,475 [INFO] SECURITY_EVENT:  * Debugger PIN: 130-481-824
+2026-07-06 18:12:50,276 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:12:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-06 18:12:50,347 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:12:50] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-07-06 18:12:50,350 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:12:50] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-07-06 18:12:50,361 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:12:50] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=X604PnxsjuVPhy7oJzj7 HTTP/1.1" 200 -
+2026-07-06 18:12:51,107 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:12:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-06 18:12:51,120 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:12:51] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-07-06 18:12:51,122 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:12:51] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-07-06 18:12:51,128 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:12:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=X604PnxsjuVPhy7oJzj7 HTTP/1.1[0m" 304 -
+2026-07-06 18:12:53,732 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:12:53] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-06 18:12:53,744 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:12:53] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-07-06 18:12:53,745 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:12:53] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-07-06 18:12:53,750 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:12:53] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=X604PnxsjuVPhy7oJzj7 HTTP/1.1[0m" 304 -
+2026-07-06 18:16:28,400 [INFO] SECURITY_EVENT:  * Detected change in 'C:\\Users\\jeeva\\Projects\\Internship Projects\\2. Secure Web App\\secure-web-app\\app.py', reloading
+2026-07-06 18:16:28,550 [INFO] SECURITY_EVENT:  * Restarting with stat
+2026-07-06 18:16:29,230 [WARNING] SECURITY_EVENT:  * Debugger is active!
+2026-07-06 18:16:29,233 [INFO] SECURITY_EVENT:  * Debugger PIN: 130-481-824
+2026-07-06 18:16:37,010 [INFO] SECURITY_EVENT: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-06 18:16:37,011 [INFO] SECURITY_EVENT: [33mPress CTRL+C to quit[0m
+2026-07-06 18:16:37,012 [INFO] SECURITY_EVENT:  * Restarting with stat
+2026-07-06 18:16:37,619 [WARNING] SECURITY_EVENT:  * Debugger is active!
+2026-07-06 18:16:37,621 [INFO] SECURITY_EVENT:  * Debugger PIN: 130-481-824
+2026-07-06 18:16:43,063 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:16:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-06 18:16:43,146 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:16:43] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-07-06 18:16:43,146 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:16:43] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-07-06 18:16:43,180 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:16:43] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=3H7bXJWHnDNUs1bup97E HTTP/1.1" 200 -
+2026-07-06 18:17:09,061 [INFO] SECURITY_EVENT:  * Detected change in 'C:\\Users\\jeeva\\Projects\\Internship Projects\\2. Secure Web App\\secure-web-app\\app.py', reloading
+2026-07-06 18:17:09,200 [INFO] SECURITY_EVENT:  * Restarting with stat
+2026-07-06 18:17:09,821 [WARNING] SECURITY_EVENT:  * Debugger is active!
+2026-07-06 18:17:09,823 [INFO] SECURITY_EVENT:  * Debugger PIN: 130-481-824
+2026-07-06 18:17:13,147 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:17:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-06 18:17:13,207 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:17:13] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-07-06 18:17:13,209 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:17:13] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-07-06 18:17:13,219 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:17:13] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=BXsf7V7NgRmJVSD4N4Mf HTTP/1.1" 200 -
+2026-07-06 18:17:47,372 [INFO] SECURITY_EVENT:  * Detected change in 'C:\\Users\\jeeva\\Projects\\Internship Projects\\2. Secure Web App\\secure-web-app\\app.py', reloading
+2026-07-06 18:17:47,523 [INFO] SECURITY_EVENT:  * Restarting with stat
+2026-07-06 18:17:48,149 [WARNING] SECURITY_EVENT:  * Debugger is active!
+2026-07-06 18:17:48,151 [INFO] SECURITY_EVENT:  * Debugger PIN: 130-481-824
+2026-07-06 18:18:18,323 [INFO] SECURITY_EVENT: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-06 18:18:18,323 [INFO] SECURITY_EVENT: [33mPress CTRL+C to quit[0m
+2026-07-06 18:18:18,324 [INFO] SECURITY_EVENT:  * Restarting with stat
+2026-07-06 18:18:18,871 [WARNING] SECURITY_EVENT:  * Debugger is active!
+2026-07-06 18:18:18,873 [INFO] SECURITY_EVENT:  * Debugger PIN: 130-481-824
+2026-07-06 18:18:21,284 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:18:21] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-06 18:18:21,364 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:18:21] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-07-06 18:18:21,365 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:18:21] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-07-06 18:18:21,398 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:18:21] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=mR8hqQd1jWsTvakWeniJ HTTP/1.1" 200 -
+2026-07-06 18:18:22,829 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:18:22] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-06 18:18:22,841 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:18:22] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-07-06 18:18:22,842 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:18:22] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-07-06 18:18:22,851 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:18:22] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=mR8hqQd1jWsTvakWeniJ HTTP/1.1[0m" 304 -
+2026-07-06 18:19:23,520 [INFO] SECURITY_EVENT:  * Detected change in 'C:\\Users\\jeeva\\Projects\\Internship Projects\\2. Secure Web App\\secure-web-app\\app.py', reloading
+2026-07-06 18:19:23,655 [INFO] SECURITY_EVENT:  * Restarting with stat
+2026-07-06 18:19:24,277 [WARNING] SECURITY_EVENT:  * Debugger is active!
+2026-07-06 18:19:24,278 [INFO] SECURITY_EVENT:  * Debugger PIN: 130-481-824
+2026-07-06 18:19:26,677 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:19:26] "GET / HTTP/1.1" 200 -
+2026-07-06 18:19:26,687 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:19:26] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2026-07-06 18:19:26,689 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:19:26] "[33mGET /app.js HTTP/1.1[0m" 404 -
+2026-07-06 18:19:26,695 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:19:26] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2026-07-06 18:19:41,308 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:19:41] "[36mGET / HTTP/1.1[0m" 304 -
+2026-07-06 18:19:41,318 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:19:41] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2026-07-06 18:19:41,320 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:19:41] "[33mGET /app.js HTTP/1.1[0m" 404 -
+2026-07-06 18:19:41,324 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:19:41] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2026-07-06 18:20:01,987 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:20:01] "GET / HTTP/1.1" 200 -
+2026-07-06 18:20:02,000 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:20:02] "[33mGET /app.js HTTP/1.1[0m" 404 -
+2026-07-06 18:20:02,000 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:20:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-06 18:20:26,146 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:20:26] "GET / HTTP/1.1" 200 -
+2026-07-06 18:20:26,157 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:20:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-07-06 18:20:26,159 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:20:26] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+2026-07-06 18:20:34,749 [INFO] SECURITY_EVENT: AUTH SUCCESS: Session token generated for User ID: 1 (user) from IP: 127.0.0.1
+2026-07-06 18:20:34,749 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:20:34] "POST /api/auth/login HTTP/1.1" 200 -
+2026-07-06 18:20:34,762 [INFO] SECURITY_EVENT: 127.0.0.1 - - [06/Jul/2026 18:20:34] "GET /api/notes HTTP/1.1" 200 -

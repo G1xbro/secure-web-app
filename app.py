@@ -20,7 +20,7 @@ db.init_app(app)
 @app.route('/')
 def index():
     # Serves the frontend application interface
-    return render_template('index.html')
+    return app.send_static_file('index.html')
 
 # --- SECURITY DECORATOR ---
 def token_required(allowed_roles=None):
